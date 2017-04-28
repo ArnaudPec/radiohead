@@ -1,0 +1,11 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: RadioHead lib
+Description: RF communication library
+Version: @VERSION@
+Libs: -L${libdir} -lwiringPi -lradiohead
+Cflags: -I${includedir}/radiohead/ -DRH_PLATFORM=RH_PLATFORM_RPI -D__RASPBERRY_PI
+
